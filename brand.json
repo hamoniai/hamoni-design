@@ -1,0 +1,154 @@
+{
+  "name": "Design System for Hamoni",
+  "tagline": "",
+  "description": "One workforce: Bring your people and AI together, orchestrated as one workforce and built to scale",
+  "sourceUrl": "designmd://design-system-inspired-by-supabase",
+  "seed": {
+    "colorPrimary": "#BB86FC",
+    "colorSuccess": "#4AD371",
+    "colorWarning": "#F4CF4A",
+    "colorError": "#FF8389",
+    "colorInfo": "#03DAC5",
+    "colorLink": "#BB86FC",
+    "colorTextBase": "#121212",
+    "colorBgBase": "#FBF6FF",
+    "fontFamily": "Inter, system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+    "fontFamilyCode": "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace",
+    "fontSize": 14,
+    "borderRadius": 8,
+    "sizeUnit": 4,
+    "sizeStep": 4,
+    "controlHeight": 32,
+    "lineWidth": 1,
+    "motionUnit": 0.1,
+    "motionBase": 0,
+    "wireframe": false,
+    "motion": true
+  },
+  "logo": {
+    "primary": "assets/Logo-notext_transparent.svg",
+    "alternates": [],
+    "notes": "Abstract circular mark in brand purple (#7F39FB), transparent background, 280×288 SVG."
+  },
+  "colors": [
+    {
+      "role": "background",
+      "hex": "#121212",
+      "oklch": "",
+      "name": "Near-black canvas",
+      "usage": "page canvas"
+    },
+    {
+      "role": "foreground",
+      "hex": "#e0e0e0",
+      "oklch": "",
+      "name": "Primary text grey",
+      "usage": "body text and headings"
+    },
+    {
+      "role": "accent",
+      "hex": "#bb86fc",
+      "oklch": "",
+      "name": "Primary purple",
+      "usage": "primary actions and emphasis"
+    },
+    {
+      "role": "surface",
+      "hex": "#1e1e1e",
+      "oklch": "",
+      "name": "Elevated surface",
+      "usage": "cards and panels"
+    },
+    {
+      "role": "muted",
+      "hex": "#a0a0a0",
+      "oklch": "",
+      "name": "Secondary text grey",
+      "usage": "secondary text and metadata"
+    },
+    {
+      "role": "border",
+      "hex": "#2e2e2e",
+      "oklch": "",
+      "name": "Border grey",
+      "usage": "rules and dividers"
+    },
+    {
+      "role": "muted",
+      "hex": "#6c6c6c",
+      "oklch": "",
+      "name": "Tertiary text grey",
+      "usage": "captions and disabled text"
+    }
+  ],
+  "typography": {
+    "display": {
+      "family": "Inter",
+      "fallbacks": [
+        "system-ui",
+        "-apple-system",
+        "Segoe UI",
+        "Helvetica Neue",
+        "Arial",
+        "sans-serif"
+      ],
+      "weights": [
+        400,
+        700
+      ]
+    },
+    "body": {
+      "family": "Inter",
+      "fallbacks": [
+        "system-ui",
+        "-apple-system",
+        "Segoe UI",
+        "Helvetica Neue",
+        "Arial",
+        "sans-serif"
+      ],
+      "weights": [
+        400,
+        700
+      ]
+    }
+  },
+  "voice": {
+    "adjectives": [
+      "Friendly",
+      "Approachable",
+      "Professional",
+      "Competent",
+      "Empathetic",
+      "Supportive"
+    ],
+    "tone": "professional, outcomes-driven, and enterprise-focused, balancing high-tech capability with human-centric collaboration",
+    "messagingPillars": [
+      "One workforce: Bring your people and AI together, orchestrated as one workforce and built to scale"
+    ],
+    "vocabulary": {
+      "use": [
+        "people-powered",
+        "people-led"
+      ],
+      "avoid": [
+        "staff",
+        "resources",
+        "replacement"
+      ]
+    }
+  },
+  "imagery": {
+    "style": "",
+    "subjects": [],
+    "treatment": "",
+    "avoid": [],
+    "samples": []
+  },
+  "layout": {
+    "radius": "8px",
+    "borderWeight": "1px",
+    "spacing": "8px baseline grid",
+    "postureRules": []
+  }
+}

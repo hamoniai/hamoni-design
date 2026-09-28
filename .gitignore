@@ -27,3 +27,6 @@ bin/
 
 # Local environment
 .env
+
+# Open Design files
+drawing-*

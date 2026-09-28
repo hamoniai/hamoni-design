@@ -1,0 +1,57 @@
+/* Design System Inspired by Supabase — exact reference palette
+ * Dark-native: purple primary, green (teal) secondary, near-black canvas.
+ * These are the authored brand swatches. Semantic interaction tokens
+ * (states derived from the seed) live in variables.css / variables.dark.css.
+ */
+
+:root {
+  /* Primary — Purple */
+  --brand-purple-50: #f2e7fe;
+  --brand-purple-100: #dbb2ff;
+  --brand-purple-200: #bb86fc;
+  --brand-purple-300: #985eff;
+  --brand-purple-400: #7f39fb;
+  --brand-purple-500: #6200ee;
+  --brand-purple-600: #5600e8;
+  --brand-purple-700: #3700b3;
+  --brand-purple-800: #30009c;
+  --brand-purple-900: #23036a;
+
+  /* Secondary — Green (Teal) */
+  --brand-green-50: #c8fff4;
+  --brand-green-100: #70efde;
+  --brand-green-200: #03dac5;
+  --brand-green-300: #00c4b4;
+  --brand-green-400: #00b3a6;
+  --brand-green-500: #01a299;
+  --brand-green-600: #019592;
+  --brand-green-700: #018786;
+  --brand-green-800: #017374;
+
+  /* Background */
+  --brand-bg-0: #121212;
+  --brand-bg-1: #1e1e1e;
+  --brand-bg-2: #232323;
+  --brand-bg-3: #252525;
+  --brand-bg-4: #272727;
+  --brand-bg-5: #2c2c2c;
+  --brand-bg-6: #2e2e2e;
+  --brand-bg-7: #333333;
+  --brand-bg-8: #363636;
+  --brand-bg-9: #383838;
+
+  /* Status / Alerts */
+  --brand-alert-error: #ff8389;
+  --brand-alert-warning: #f4cf4a;
+  --brand-alert-success: #4ad371;
+
+  /* Data visualisation */
+  --brand-viz-1: #bb86fc;
+  --brand-viz-2: #74539c;
+  --brand-viz-3: #121212;
+
+  /* Text */
+  --brand-text-primary: #e0e0e0;
+  --brand-text-secondary: #a0a0a0;
+  --brand-text-tertiary: #6c6c6c;
+}
