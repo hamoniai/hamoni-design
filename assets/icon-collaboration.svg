@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140">
+<rect width="140" height="140" fill="#161616"/>
+<rect x="14" y="14" width="112" height="112" rx="14" ry="14" fill="none" stroke="#BB86FC" stroke-width="2.5"/>
+
+<!-- Left speech bubble (offset to the left) -->
+<path d="M 38 32 L 72 32 Q 78 32 78 38 L 78 56 Q 78 62 72 62 L 50 62 L 42 70 L 44 62 L 38 62 Q 32 62 32 56 L 32 38 Q 32 32 38 32 Z" fill="none" stroke="#FBF6FF" stroke-width="2.5" stroke-linejoin="round"/>
+
+<!-- Right speech bubble (offset to the right) -->
+<path d="M 68 72 L 102 72 Q 108 72 108 78 L 108 96 Q 108 102 102 102 L 96 102 L 98 110 L 90 102 L 68 102 Q 62 102 62 96 L 62 78 Q 62 72 68 72 Z" fill="none" stroke="#FBF6FF" stroke-width="2.5" stroke-linejoin="round"/>
+
+</svg>

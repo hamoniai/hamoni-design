@@ -1,7 +1,7 @@
 {
   "name": "Design System for Hamoni",
   "tagline": "",
-  "description": "One workforce: Bring your people and AI together, orchestrated as one workforce and built to scale",
+  "description": "## Product Context\n\nHamoni is a cloud workflow platform with an Operations-first focus that allows teams to integrate AI directly into their business processes as an actively contributing participant. Given the focus, the primary user is likely to be non-technical. Therefore there are three key rules 1) 80% of things should be easy; 2) the remaining 20% fall into an 'advanced mode' that should be used by a technical user; 3) when in advanced mode, the user should have full control, with only verification to ensure any provided changes do not break the platform.\n\n## Components\n\n- **Primary action** — one solid button per view: fill `var(--brand-color-primary)`, text `var(--brand-color-text)`.\n- **Secondary** — outline (`1px var(--brand-color-border)`) or ghost/text; never a second solid fill.\n- **Surfaces** — cards on `var(--brand-color-bg-container)`; raised panels on `var(--brand-color-bg-elevated)`.\n- **Radius** — `3 / 5 / 8 / 10px` (xs / sm / default / lg).\n- **Control heights** — `16 / 24 / 32 / 40px` (xs / sm / default / lg); `44px` minimum touch target on mobile.\n- **Borders** — `1px` `var(--brand-color-border)` / `var(--brand-color-border-secondary)`.\n- **States** — hover / focus / active use the derived `--brand-color-*-hover | -active | -border` tokens; always show a focus ring.\n- **Inventory** — buttons, cards, forms/inputs, tabs, badges, avatars, accordion, progress, pagination, switches.\n\n## Motion\n\n- **Durations** — fast `0.1s` · mid `0.2s` · slow `0.3s`.\n- **Easing** — in-out `cubic-bezier(0.645, 0.045, 0.355, 1)`; out `cubic-bezier(0.215, 0.61, 0.355, 1)`.\n- **Usage** — transitions on hover/active (colour, border, small transforms); no large movement.\n- **Reduced motion** — honour `prefers-reduced-motion: reduce` by dropping non-essential transitions.\n\n## Anti-patterns\n\n- Don't hardcode colours — use `--brand-color-*` tokens.\n- Don't use colours outside the registered palette.\n- Don't put light text on the light-purple primary fill — use `var(--brand-color-text)`.\n- Don't recolour the logo or add a wordmark to it.\n- Don't use the avoid-list vocabulary: *staff*, *resources*, *replacement*.\n- Don't lean on heavy drop shadows — depth comes from borders and surfaces.\n- Don't expose raw configuration to the non-technical user — put it behind **advanced mode**.\n\n",
   "sourceUrl": "designmd://design-system-inspired-by-supabase",
   "seed": {
     "colorPrimary": "#BB86FC",
@@ -111,6 +111,19 @@
         400,
         700
       ]
+    },
+    "mono": {
+      "family": "'Roboto Mono'",
+      "fallbacks": [
+        "system-ui",
+        "ui-monospace",
+        "'Courier New'",
+        "monospace"
+      ],
+      "weights": [
+        400,
+        700
+      ]
     }
   },
   "voice": {
@@ -122,7 +135,7 @@
       "Empathetic",
       "Supportive"
     ],
-    "tone": "professional, outcomes-driven, and enterprise-focused, balancing high-tech capability with human-centric collaboration",
+    "tone": "professional, outcomes-driven, enterprise-focused, balancing high-tech capability with human-centric collaboration",
     "messagingPillars": [
       "One workforce: Bring your people and AI together, orchestrated as one workforce and built to scale"
     ],
@@ -139,11 +152,53 @@
     }
   },
   "imagery": {
-    "style": "",
-    "subjects": [],
+    "style": "Use photorealistic images (JPEG or PNG) for pages and content that depicts a real-world, human-centric situation, such as a cover page or case study. For abstract concepts use flat geometric images (SVG), which may or may not include a character.",
+    "subjects": [
+      "People at work",
+      "Finance",
+      "Medical",
+      "Utilities"
+    ],
     "treatment": "",
     "avoid": [],
-    "samples": []
+    "samples": [
+      {
+        "file": "assets/cover0.jpg",
+        "caption": "Cover — people and AI orchestrated as one workforce"
+      },
+      {
+        "file": "assets/case-study-finance.jpg",
+        "caption": "Case study — finance"
+      },
+      {
+        "file": "assets/case-study-medical.jpg",
+        "caption": "Case study — medical"
+      },
+      {
+        "file": "assets/case-study-utilities.jpg",
+        "caption": "Case study — utilities"
+      },
+      {
+        "file": "assets/icon-analytics-hub.svg",
+        "caption": "Concept icon — analytics hub"
+      },
+      {
+        "file": "assets/icon-collaboration.svg",
+        "caption": "Concept icon — collaboration"
+      },
+      {
+        "file": "assets/icon-customer-experience.svg",
+        "caption": "Concept icon — customer experience"
+      },
+      {
+        "file": "assets/icon-document-intelligence.svg",
+        "caption": "Concept icon — document intelligence"
+      },
+      {
+        "file": "assets/icon-operations-coordinator.svg",
+        "caption": "Concept icon — operations coordinator"
+      }
+    ]
   },
   "layout": {
     "radius": "8px",

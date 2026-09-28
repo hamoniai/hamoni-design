@@ -275,7 +275,37 @@ details.kit-acc[open] .kit-acc-icon{transform:rotate(45deg)}
   </head>
   <body>
     <!-- hidden preheader: earns the open, complements the subject, never repeats it -->
-    <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:var(--brand-color-bg-layout);opacity:0;">One workforce: Bring your people and AI together, orchestrated as one workforce and built to scale</div>
+    <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:var(--brand-color-bg-layout);opacity:0;">## Product Context
+
+Hamoni is a cloud workflow platform with an Operations-first focus that allows teams to integrate AI directly into their business processes as an actively contributing participant. Given the focus, the primary user is likely to be non-technical. Therefore there are three key rules 1) 80% of things should be easy; 2) the remaining 20% fall into an 'advanced mode' that should be used by a technical user; 3) when in advanced mode, the user should have full control, with only verification to ensure any provided changes do not break the platform.
+
+## Components
+
+- **Primary action** — one solid button per view: fill `var(--brand-color-primary)`, text `var(--brand-color-text)`.
+- **Secondary** — outline (`1px var(--brand-color-border)`) or ghost/text; never a second solid fill.
+- **Surfaces** — cards on `var(--brand-color-bg-container)`; raised panels on `var(--brand-color-bg-elevated)`.
+- **Radius** — `3 / 5 / 8 / 10px` (xs / sm / default / lg).
+- **Control heights** — `16 / 24 / 32 / 40px` (xs / sm / default / lg); `44px` minimum touch target on mobile.
+- **Borders** — `1px` `var(--brand-color-border)` / `var(--brand-color-border-secondary)`.
+- **States** — hover / focus / active use the derived `--brand-color-*-hover | -active | -border` tokens; always show a focus ring.
+- **Inventory** — buttons, cards, forms/inputs, tabs, badges, avatars, accordion, progress, pagination, switches.
+
+## Motion
+
+- **Durations** — fast `0.1s` · mid `0.2s` · slow `0.3s`.
+- **Easing** — in-out `cubic-bezier(0.645, 0.045, 0.355, 1)`; out `cubic-bezier(0.215, 0.61, 0.355, 1)`.
+- **Usage** — transitions on hover/active (colour, border, small transforms); no large movement.
+- **Reduced motion** — honour `prefers-reduced-motion: reduce` by dropping non-essential transitions.
+
+## Anti-patterns
+
+- Don't hardcode colours — use `--brand-color-*` tokens.
+- Don't use colours outside the registered palette.
+- Don't put light text on the light-purple primary fill — use `var(--brand-color-text)`.
+- Don't recolour the logo or add a wordmark to it.
+- Don't use the avoid-list vocabulary: *staff*, *resources*, *replacement*.
+- Don't lean on heavy drop shadows — depth comes from borders and surfaces.
+- Don't expose raw configuration to the non-technical user — put it behind **advanced mode**.</div>
     <!-- whitespace eater so the body copy does not leak into the inbox preview -->
     <div style="display:none;max-height:0;overflow:hidden;">&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;</div>
 
@@ -296,7 +326,37 @@ details.kit-acc[open] .kit-acc-icon{transform:rotate(45deg)}
               <td style="padding:var(--brand-size-xxl) var(--brand-size-xl) var(--brand-size-lg);text-align:center;background:var(--brand-color-primary-bg);">
                 <p style="margin:0 0 var(--brand-size-sm);font-family:var(--brand-font-family);text-transform:uppercase;letter-spacing:0.16em;font-size:var(--brand-font-size-sm);font-weight:var(--brand-font-weight-strong);color:var(--brand-color-primary);">Friendly</p>
                 <h1 style="margin:0 0 var(--brand-size-md);font-family:var(--display-family);font-size:var(--brand-font-size-heading-2);line-height:1.15;letter-spacing:-0.015em;color:var(--brand-color-text);">One workforce</h1>
-                <p style="margin:0 auto var(--brand-size-xl);max-width:46ch;font-family:var(--brand-font-family);font-size:var(--brand-font-size-lg);line-height:1.55;color:var(--brand-color-text-secondary);">One workforce: Bring your people and AI together, orchestrated as one workforce and built to scale</p>
+                <p style="margin:0 auto var(--brand-size-xl);max-width:46ch;font-family:var(--brand-font-family);font-size:var(--brand-font-size-lg);line-height:1.55;color:var(--brand-color-text-secondary);">## Product Context
+
+Hamoni is a cloud workflow platform with an Operations-first focus that allows teams to integrate AI directly into their business processes as an actively contributing participant. Given the focus, the primary user is likely to be non-technical. Therefore there are three key rules 1) 80% of things should be easy; 2) the remaining 20% fall into an 'advanced mode' that should be used by a technical user; 3) when in advanced mode, the user should have full control, with only verification to ensure any provided changes do not break the platform.
+
+## Components
+
+- **Primary action** — one solid button per view: fill `var(--brand-color-primary)`, text `var(--brand-color-text)`.
+- **Secondary** — outline (`1px var(--brand-color-border)`) or ghost/text; never a second solid fill.
+- **Surfaces** — cards on `var(--brand-color-bg-container)`; raised panels on `var(--brand-color-bg-elevated)`.
+- **Radius** — `3 / 5 / 8 / 10px` (xs / sm / default / lg).
+- **Control heights** — `16 / 24 / 32 / 40px` (xs / sm / default / lg); `44px` minimum touch target on mobile.
+- **Borders** — `1px` `var(--brand-color-border)` / `var(--brand-color-border-secondary)`.
+- **States** — hover / focus / active use the derived `--brand-color-*-hover | -active | -border` tokens; always show a focus ring.
+- **Inventory** — buttons, cards, forms/inputs, tabs, badges, avatars, accordion, progress, pagination, switches.
+
+## Motion
+
+- **Durations** — fast `0.1s` · mid `0.2s` · slow `0.3s`.
+- **Easing** — in-out `cubic-bezier(0.645, 0.045, 0.355, 1)`; out `cubic-bezier(0.215, 0.61, 0.355, 1)`.
+- **Usage** — transitions on hover/active (colour, border, small transforms); no large movement.
+- **Reduced motion** — honour `prefers-reduced-motion: reduce` by dropping non-essential transitions.
+
+## Anti-patterns
+
+- Don't hardcode colours — use `--brand-color-*` tokens.
+- Don't use colours outside the registered palette.
+- Don't put light text on the light-purple primary fill — use `var(--brand-color-text)`.
+- Don't recolour the logo or add a wordmark to it.
+- Don't use the avoid-list vocabulary: *staff*, *resources*, *replacement*.
+- Don't lean on heavy drop shadows — depth comes from borders and surfaces.
+- Don't expose raw configuration to the non-technical user — put it behind **advanced mode**.</p>
                 <!-- the one primary CTA, above the fold -->
                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;border-collapse:separate;line-height:100%;">
                     <tr>

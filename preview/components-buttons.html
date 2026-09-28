@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hamoni — Buttons</title>
+  <link rel="stylesheet" href="../colors_and_type.css" />
+  <style>
+    body { margin: 0; padding: 24px; background: var(--brand-color-bg-container); color: var(--brand-color-text); font-family: var(--brand-font-family); }
+    h2 { font-size: 20px; margin: 0 0 2px; font-weight: var(--brand-font-weight-strong); }
+    p.sub { margin: 0 0 20px; color: var(--brand-color-text-secondary); font-size: 13px; }
+    .card { border: 1px solid var(--brand-color-border-secondary); border-radius: 8px; padding: 18px; background: var(--brand-color-bg-elevated); }
+    .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .row + .row { margin-top: 14px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; height: var(--brand-control-height); padding: 0 var(--brand-size); font-family: var(--brand-font-family); font-size: var(--brand-font-size); font-weight: var(--brand-font-weight-strong); line-height: 1; border-radius: var(--brand-border-radius); border: 1px solid transparent; cursor: pointer; text-decoration: none; transition: background var(--brand-motion-duration-mid), border-color var(--brand-motion-duration-mid); }
+    .btn.primary { background: var(--brand-color-primary); color: var(--brand-color-text); border-color: var(--brand-color-primary); }
+    .btn.primary:hover { background: var(--brand-color-primary-hover); border-color: var(--brand-color-primary-hover); }
+    .btn.default { background: var(--brand-color-bg-container); color: var(--brand-color-text); border-color: var(--brand-color-border); }
+    .btn.default:hover { border-color: var(--brand-color-primary); }
+    .btn.dashed { background: transparent; color: var(--brand-color-text); border: 1px dashed var(--brand-color-border); }
+    .btn.text { background: transparent; color: var(--brand-color-text); }
+    .btn.text:hover { color: var(--brand-color-primary); }
+    .btn.link { background: transparent; color: var(--brand-color-link); padding: 0; }
+    .btn.sm { height: var(--brand-control-height-sm); padding: 0 var(--brand-size-xs); font-size: var(--brand-font-size-sm); }
+    .btn.lg { height: var(--brand-control-height-lg); padding: 0 var(--brand-size-lg); font-size: var(--brand-font-size-lg); }
+    .btn[disabled] { opacity: .5; cursor: not-allowed; }
+  </style>
+</head>
+<body>
+  <h2>Buttons</h2>
+  <p class="sub">Primary fill uses <code>var(--brand-color-text)</code> for legible contrast</p>
+
+  <div class="card">
+    <div class="row">
+      <button class="btn primary">Primary</button>
+      <button class="btn default">Default</button>
+      <button class="btn dashed">Dashed</button>
+      <button class="btn text">Text</button>
+      <a class="btn link" href="#">Link</a>
+    </div>
+    <div class="row">
+      <button class="btn primary sm">Small</button>
+      <button class="btn primary">Medium</button>
+      <button class="btn primary lg">Large</button>
+    </div>
+    <div class="row">
+      <button class="btn primary" disabled>Primary disabled</button>
+      <button class="btn default" disabled>Default disabled</button>
+    </div>
+  </div>
+</body>
+</html>

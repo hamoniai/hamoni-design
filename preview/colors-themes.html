@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hamoni — Themes (light &amp; dark)</title>
+  <link rel="stylesheet" href="../colors_and_type.css" />
+  <style>
+    body { margin: 0; padding: 24px; background: var(--brand-color-bg-layout); color: var(--brand-color-text); font-family: var(--brand-font-family); }
+    h1 { font-size: 20px; margin: 0 0 2px; font-weight: var(--brand-font-weight-strong); }
+    p.sub { margin: 0 0 20px; color: var(--brand-color-text-secondary); font-size: 13px; }
+    .themes { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .panel { border-radius: 8px; padding: 16px; border: 1px solid var(--brand-color-border); background: var(--brand-color-bg-container); }
+    .panel h2 { margin: 0 0 12px; font-size: 14px; font-weight: var(--brand-font-weight-strong); color: var(--brand-color-text); }
+    .row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 12px; font-family: var(--brand-font-family-code); color: var(--brand-color-text-secondary); }
+    .sw { width: 22px; height: 22px; border-radius: 5px; border: 1px solid var(--brand-color-border-secondary); flex: 0 0 auto; }
+    .sample { margin-top: 12px; padding: 12px; border: 1px solid var(--brand-color-border-secondary); border-radius: 8px; background: var(--brand-color-bg-elevated); color: var(--brand-color-text); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <h1>Themes</h1>
+  <p class="sub">Light is the default (<code>:root</code>); dark is opt-in via the <code>.dark</code> class</p>
+
+  <div class="themes">
+    <div class="panel">
+      <h2>Light — default</h2>
+      <div class="row"><span class="sw" style="background:var(--brand-color-bg-container)"></span>canvas</div>
+      <div class="row"><span class="sw" style="background:var(--brand-color-bg-elevated)"></span>surface</div>
+      <div class="row"><span class="sw" style="background:var(--brand-color-text)"></span>text</div>
+      <div class="row"><span class="sw" style="background:var(--brand-color-text-secondary)"></span>secondary</div>
+      <div class="row"><span class="sw" style="background:var(--brand-color-border)"></span>border</div>
+      <div class="sample">Bring your people and AI together.</div>
+    </div>
+
+    <div class="panel dark">
+      <h2>Dark — <code>.dark</code></h2>
+      <div class="row"><span class="sw" style="background:var(--brand-color-bg-container)"></span>canvas</div>
+      <div class="row"><span class="sw" style="background:var(--brand-color-bg-elevated)"></span>surface</div>
+      <div class="row"><span class="sw" style="background:var(--brand-color-text)"></span>text</div>
+      <div class="row"><span class="sw" style="background:var(--brand-color-text-secondary)"></span>secondary</div>
+      <div class="row"><span class="sw" style="background:var(--brand-color-border)"></span>border</div>
+      <div class="sample">Bring your people and AI together.</div>
+    </div>
+  </div>
+</body>
+</html>

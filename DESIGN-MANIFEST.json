@@ -4,17 +4,43 @@
   "entryFile": "system/index.html",
   "sourceFiles": {
     "all": [
+      "assets/case-study-finance.jpg",
+      "assets/case-study-medical.jpg",
+      "assets/case-study-utilities.jpg",
+      "assets/cover0.jpg",
+      "assets/icon-analytics-hub.svg",
+      "assets/icon-collaboration.svg",
+      "assets/icon-customer-experience.svg",
+      "assets/icon-document-intelligence.svg",
+      "assets/icon-operations-coordinator.svg",
       "assets/Logo-notext_transparent.svg",
       "brand.html",
       "brand.json",
+      "case-study-finance.jpg",
+      "case-study-medical.jpg",
+      "case-study-utilities.jpg",
+      "colors_and_type.css",
       "context/input-DESIGN.md",
       "context/source-context.md",
+      "cover0.jpg",
       "DESIGN.md",
       "drawing-2026-09-28T04-54-53-491Z.png",
       "drawing-2026-09-28T04-55-53-393Z.png",
       "guide.md",
+      "icon-analytics-hub.svg",
+      "icon-collaboration.svg",
+      "icon-customer-experience.svg",
+      "icon-document-intelligence.svg",
+      "icon-operations-coordinator.svg",
       "Logo-notext_transparent.svg",
+      "preview/brand-assets.html",
+      "preview/colors-primary.html",
+      "preview/colors-themes.html",
+      "preview/components-buttons.html",
+      "preview/spacing-tokens.html",
+      "preview/typography-specimens.html",
       "README.md",
+      "SKILL.md",
       "system/artifacts/deck.html",
       "system/artifacts/email.html",
       "system/artifacts/form.html",
@@ -28,7 +54,10 @@
       "system/kit.html",
       "system/README.md",
       "system/scripts/apply-design-tokens.mjs",
+      "system/scripts/clean-design-heading.mjs",
       "system/scripts/finalize-and-fix.mjs",
+      "system/scripts/refresh-colors-and-type.mjs",
+      "system/scripts/refresh-previews.mjs",
       "system/scripts/restore-brand-pins.mjs",
       "system/seed.json",
       "system/theme.json",
@@ -36,10 +65,24 @@
       "system/tokens.dark.json",
       "system/tokens.default.json",
       "system/variables.css",
-      "system/variables.dark.css"
+      "system/variables.dark.css",
+      "ui_kits/app/components/App.jsx",
+      "ui_kits/app/components/ChatArea.jsx",
+      "ui_kits/app/components/InputBar.jsx",
+      "ui_kits/app/components/ListRail.jsx",
+      "ui_kits/app/components/MessageBubble.jsx",
+      "ui_kits/app/components/Sidebar.jsx",
+      "ui_kits/app/index.html",
+      "ui_kits/app/README.md"
     ],
     "html": [
       "brand.html",
+      "preview/brand-assets.html",
+      "preview/colors-primary.html",
+      "preview/colors-themes.html",
+      "preview/components-buttons.html",
+      "preview/spacing-tokens.html",
+      "preview/typography-specimens.html",
       "system/artifacts/deck.html",
       "system/artifacts/email.html",
       "system/artifacts/form.html",
@@ -48,41 +91,102 @@
       "system/artifacts/poster.html",
       "system/index.html",
       "system/kit.dark.html",
-      "system/kit.html"
+      "system/kit.html",
+      "ui_kits/app/index.html"
     ],
     "css": [
+      "colors_and_type.css",
       "system/brand-palette.css",
       "system/variables.css",
       "system/variables.dark.css"
     ],
     "scriptsAndComponents": [
       "system/scripts/apply-design-tokens.mjs",
+      "system/scripts/clean-design-heading.mjs",
       "system/scripts/finalize-and-fix.mjs",
-      "system/scripts/restore-brand-pins.mjs"
+      "system/scripts/refresh-colors-and-type.mjs",
+      "system/scripts/refresh-previews.mjs",
+      "system/scripts/restore-brand-pins.mjs",
+      "ui_kits/app/components/App.jsx",
+      "ui_kits/app/components/ChatArea.jsx",
+      "ui_kits/app/components/InputBar.jsx",
+      "ui_kits/app/components/ListRail.jsx",
+      "ui_kits/app/components/MessageBubble.jsx",
+      "ui_kits/app/components/Sidebar.jsx"
     ],
     "assets": [
+      "assets/case-study-finance.jpg",
+      "assets/case-study-medical.jpg",
+      "assets/case-study-utilities.jpg",
+      "assets/cover0.jpg",
+      "assets/icon-analytics-hub.svg",
+      "assets/icon-collaboration.svg",
+      "assets/icon-customer-experience.svg",
+      "assets/icon-document-intelligence.svg",
+      "assets/icon-operations-coordinator.svg",
       "assets/Logo-notext_transparent.svg",
       "brand.json",
+      "case-study-finance.jpg",
+      "case-study-medical.jpg",
+      "case-study-utilities.jpg",
       "context/input-DESIGN.md",
       "context/source-context.md",
+      "cover0.jpg",
       "DESIGN.md",
       "drawing-2026-09-28T04-54-53-491Z.png",
       "drawing-2026-09-28T04-55-53-393Z.png",
       "guide.md",
+      "icon-analytics-hub.svg",
+      "icon-collaboration.svg",
+      "icon-customer-experience.svg",
+      "icon-document-intelligence.svg",
+      "icon-operations-coordinator.svg",
       "Logo-notext_transparent.svg",
       "README.md",
+      "SKILL.md",
       "system/BRAND-SYSTEM.md",
       "system/README.md",
       "system/seed.json",
       "system/theme.json",
       "system/tokens.compact.json",
       "system/tokens.dark.json",
-      "system/tokens.default.json"
+      "system/tokens.default.json",
+      "ui_kits/app/README.md"
     ]
   },
   "screens": [
     {
       "file": "brand.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/brand-assets.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/colors-primary.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/colors-themes.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/components-buttons.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/spacing-tokens.html",
+      "role": "screen",
+      "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "preview/typography-specimens.html",
       "role": "screen",
       "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
     },
@@ -130,6 +234,11 @@
       "file": "system/kit.html",
       "role": "screen",
       "implementationNote": "Preserve visual hierarchy, responsive behavior, and interactive states from this screen."
+    },
+    {
+      "file": "ui_kits/app/index.html",
+      "role": "launcher-overview",
+      "implementationNote": "Use this as the navigation/overview entry only; implement each linked screen file as its own route/surface."
     }
   ],
   "screenFilePolicy": {
@@ -163,6 +272,7 @@
   },
   "tokens": {
     "source": [
+      "colors_and_type.css",
       "system/brand-palette.css",
       "system/variables.css",
       "system/variables.dark.css"
@@ -185,8 +295,17 @@
   "interactions": {
     "source": [
       "system/scripts/apply-design-tokens.mjs",
+      "system/scripts/clean-design-heading.mjs",
       "system/scripts/finalize-and-fix.mjs",
-      "system/scripts/restore-brand-pins.mjs"
+      "system/scripts/refresh-colors-and-type.mjs",
+      "system/scripts/refresh-previews.mjs",
+      "system/scripts/restore-brand-pins.mjs",
+      "ui_kits/app/components/App.jsx",
+      "ui_kits/app/components/ChatArea.jsx",
+      "ui_kits/app/components/InputBar.jsx",
+      "ui_kits/app/components/ListRail.jsx",
+      "ui_kits/app/components/MessageBubble.jsx",
+      "ui_kits/app/components/Sidebar.jsx"
     ],
     "requiredStates": [
       "default",

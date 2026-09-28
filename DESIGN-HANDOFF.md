@@ -11,10 +11,10 @@ This archive is the source of truth for turning the design into production code.
 
 ## Source map
 - Primary entry: `system/index.html`
-- HTML screens detected: 10
-- Stylesheets detected: 3
-- Script/component files detected: 3
-- Supporting assets detected: 17
+- HTML screens detected: 17
+- Stylesheets detected: 4
+- Script/component files detected: 12
+- Supporting assets detected: 37
 
 ## Responsive contract
 Validate the implementation across this 2025–2026 viewport matrix:
@@ -64,6 +64,12 @@ For responsive web exports, treat these as a modern breakpoint system for one ad
 
 ## Entry points
 - `brand.html`
+- `preview/brand-assets.html`
+- `preview/colors-primary.html`
+- `preview/colors-themes.html`
+- `preview/components-buttons.html`
+- `preview/spacing-tokens.html`
+- `preview/typography-specimens.html`
 - `system/artifacts/deck.html`
 - `system/artifacts/email.html`
 - `system/artifacts/form.html`
@@ -73,28 +79,58 @@ For responsive web exports, treat these as a modern breakpoint system for one ad
 - `system/index.html`
 - `system/kit.dark.html`
 - `system/kit.html`
+- `ui_kits/app/index.html`
 
 ## Styles
+- `colors_and_type.css`
 - `system/brand-palette.css`
 - `system/variables.css`
 - `system/variables.dark.css`
 
 ## Scripts/components
 - `system/scripts/apply-design-tokens.mjs`
+- `system/scripts/clean-design-heading.mjs`
 - `system/scripts/finalize-and-fix.mjs`
+- `system/scripts/refresh-colors-and-type.mjs`
+- `system/scripts/refresh-previews.mjs`
 - `system/scripts/restore-brand-pins.mjs`
+- `ui_kits/app/components/App.jsx`
+- `ui_kits/app/components/ChatArea.jsx`
+- `ui_kits/app/components/InputBar.jsx`
+- `ui_kits/app/components/ListRail.jsx`
+- `ui_kits/app/components/MessageBubble.jsx`
+- `ui_kits/app/components/Sidebar.jsx`
 
 ## Assets and supporting files
+- `assets/case-study-finance.jpg`
+- `assets/case-study-medical.jpg`
+- `assets/case-study-utilities.jpg`
+- `assets/cover0.jpg`
+- `assets/icon-analytics-hub.svg`
+- `assets/icon-collaboration.svg`
+- `assets/icon-customer-experience.svg`
+- `assets/icon-document-intelligence.svg`
+- `assets/icon-operations-coordinator.svg`
 - `assets/Logo-notext_transparent.svg`
 - `brand.json`
+- `case-study-finance.jpg`
+- `case-study-medical.jpg`
+- `case-study-utilities.jpg`
 - `context/input-DESIGN.md`
 - `context/source-context.md`
+- `cover0.jpg`
 - `DESIGN.md`
 - `drawing-2026-09-28T04-54-53-491Z.png`
 - `drawing-2026-09-28T04-55-53-393Z.png`
 - `guide.md`
+- `icon-analytics-hub.svg`
+- `icon-collaboration.svg`
+- `icon-customer-experience.svg`
+- `icon-document-intelligence.svg`
+- `icon-operations-coordinator.svg`
 - `Logo-notext_transparent.svg`
 - `README.md`
+- `SKILL.md`
 - `system/BRAND-SYSTEM.md`
 - `system/README.md`
 - `system/seed.json`
@@ -102,6 +138,7 @@ For responsive web exports, treat these as a modern breakpoint system for one ad
 - `system/tokens.compact.json`
 - `system/tokens.dark.json`
 - `system/tokens.default.json`
+- `ui_kits/app/README.md`
 
 ## Coding checklist for AI tools
 1. Inspect `system/index.html` and `DESIGN-MANIFEST.json` first and identify reusable components before coding.

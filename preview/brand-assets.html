@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hamoni — Brand assets</title>
+  <link rel="stylesheet" href="../colors_and_type.css" />
+  <style>
+    body { margin: 0; padding: 24px; background: var(--brand-color-bg-container); color: var(--brand-color-text); font-family: var(--brand-font-family); }
+    h2 { font-size: 20px; margin: 0 0 2px; font-weight: var(--brand-font-weight-strong); }
+    p.sub { margin: 0 0 20px; color: var(--brand-color-text-secondary); font-size: 13px; }
+    h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--brand-color-text-tertiary); margin: 22px 0 10px; }
+    .card { border: 1px solid var(--brand-color-border-secondary); border-radius: 8px; padding: 18px; background: var(--brand-color-bg-elevated); }
+    .logo { display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 120px; border-radius: 12px; background: #FBF6FF; border: 1px solid var(--brand-color-border-secondary); }
+    .logo img { max-width: 72px; max-height: 74px; }
+    .icons { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+    .icons img { width: 100%; height: auto; display: block; border-radius: 8px; }
+    .photos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .photos figure { margin: 0; }
+    .photos img { width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid var(--brand-color-border-secondary); }
+    .photos figcaption { margin-top: 6px; font-size: 11px; color: var(--brand-color-text-tertiary); font-family: var(--brand-font-family-code); }
+  </style>
+</head>
+<body>
+  <h2>Brand assets</h2>
+  <p class="sub">Preserved files from <code>assets/</code> — logo, concept icons, photorealistic examples</p>
+
+  <div class="card">
+    <h3>Logo</h3>
+    <span class="logo"><img src="../assets/Logo-notext_transparent.svg" alt="Hamoni logo" /></span>
+
+    <h3>Concept icons (geometric)</h3>
+    <div class="icons">
+      <img src="../assets/icon-analytics-hub.svg" alt="Analytics hub" />
+      <img src="../assets/icon-collaboration.svg" alt="Collaboration" />
+      <img src="../assets/icon-customer-experience.svg" alt="Customer experience" />
+      <img src="../assets/icon-document-intelligence.svg" alt="Document intelligence" />
+      <img src="../assets/icon-operations-coordinator.svg" alt="Operations coordinator" />
+    </div>
+
+    <h3>Photorealistic examples</h3>
+    <div class="photos">
+      <figure><img src="../assets/cover0.jpg" alt="People and AI orchestrated as one workforce" /><figcaption>cover0.jpg</figcaption></figure>
+      <figure><img src="../assets/case-study-medical.jpg" alt="Clinical staff on shift" /><figcaption>case-study-medical.jpg</figcaption></figure>
+      <figure><img src="../assets/case-study-finance.jpg" alt="Presenting at the whiteboard" /><figcaption>case-study-finance.jpg</figcaption></figure>
+      <figure><img src="../assets/case-study-utilities.jpg" alt="Monitoring at a workstation" /><figcaption>case-study-utilities.jpg</figcaption></figure>
+    </div>
+  </div>
+</body>
+</html>

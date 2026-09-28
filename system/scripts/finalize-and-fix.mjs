@@ -41,4 +41,14 @@ if (!fs.existsSync(restore)) {
   process.exit(1);
 }
 const res2 = spawnSync(node, [restore], { stdio: 'inherit' });
-process.exit(res2.status ?? 0);
+if (res2.status !== 0) process.exit(res2.status ?? 1);
+
+// Strip the markdown heading from HTML, rebuild the foundation, refresh previews.
+for (const step of ['clean-design-heading.mjs', 'refresh-colors-and-type.mjs', 'refresh-previews.mjs']) {
+  const p = path.join(root, 'system', 'scripts', step);
+  if (fs.existsSync(p)) {
+    const res = spawnSync(node, [p], { stdio: 'inherit' });
+    if (res.status !== 0) process.exit(res.status ?? 1);
+  }
+}
+process.exit(0);

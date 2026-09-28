@@ -18,7 +18,39 @@ colors:
 
 > Surface: web
 
-One workforce: Bring your people and AI together, orchestrated as one workforce and built to scale
+## Product Context
+
+Hamoni is a cloud workflow platform with an Operations-first focus that allows teams to integrate AI directly into their business processes as an actively contributing participant. Given the focus, the primary user is likely to be non-technical. Therefore there are three key rules 1) 80% of things should be easy; 2) the remaining 20% fall into an 'advanced mode' that should be used by a technical user; 3) when in advanced mode, the user should have full control, with only verification to ensure any provided changes do not break the platform.
+
+## Components
+
+- **Primary action** — one solid button per view: fill `var(--brand-color-primary)`, text `var(--brand-color-text)`.
+- **Secondary** — outline (`1px var(--brand-color-border)`) or ghost/text; never a second solid fill.
+- **Surfaces** — cards on `var(--brand-color-bg-container)`; raised panels on `var(--brand-color-bg-elevated)`.
+- **Radius** — `3 / 5 / 8 / 10px` (xs / sm / default / lg).
+- **Control heights** — `16 / 24 / 32 / 40px` (xs / sm / default / lg); `44px` minimum touch target on mobile.
+- **Borders** — `1px` `var(--brand-color-border)` / `var(--brand-color-border-secondary)`.
+- **States** — hover / focus / active use the derived `--brand-color-*-hover | -active | -border` tokens; always show a focus ring.
+- **Inventory** — buttons, cards, forms/inputs, tabs, badges, avatars, accordion, progress, pagination, switches.
+
+## Motion
+
+- **Durations** — fast `0.1s` · mid `0.2s` · slow `0.3s`.
+- **Easing** — in-out `cubic-bezier(0.645, 0.045, 0.355, 1)`; out `cubic-bezier(0.215, 0.61, 0.355, 1)`.
+- **Usage** — transitions on hover/active (colour, border, small transforms); no large movement.
+- **Reduced motion** — honour `prefers-reduced-motion: reduce` by dropping non-essential transitions.
+
+## Anti-patterns
+
+- Don't hardcode colours — use `--brand-color-*` tokens.
+- Don't use colours outside the registered palette.
+- Don't put light text on the light-purple primary fill — use `var(--brand-color-text)`.
+- Don't recolour the logo or add a wordmark to it.
+- Don't use the avoid-list vocabulary: *staff*, *resources*, *replacement*.
+- Don't lean on heavy drop shadows — depth comes from borders and surfaces.
+- Don't expose raw configuration to the non-technical user — put it behind **advanced mode**.
+
+
 
 ## Color Palette
 
@@ -35,11 +67,12 @@ One workforce: Bring your people and AI together, orchestrated as one workforce 
 ## Typography
 - **Display:** Inter — weights 400, 700 — fallbacks: system-ui, -apple-system, Segoe UI, Helvetica Neue, Arial, sans-serif
 - **Body:** Inter — weights 400, 700 — fallbacks: system-ui, -apple-system, Segoe UI, Helvetica Neue, Arial, sans-serif
+- **Mono:** 'Roboto Mono' — weights 400, 700 — fallbacks: system-ui, ui-monospace, 'Courier New', monospace
 
 ## Voice & Tone
 
 - **Adjectives:** Friendly, Approachable, Professional, Competent, Empathetic, Supportive
-- **Tone:** professional, outcomes-driven, and enterprise-focused, balancing high-tech capability with human-centric collaboration
+- **Tone:** professional, outcomes-driven, enterprise-focused, balancing high-tech capability with human-centric collaboration
 
 ### Messaging pillars
 - One workforce: Bring your people and AI together, orchestrated as one workforce and built to scale
@@ -50,8 +83,8 @@ One workforce: Bring your people and AI together, orchestrated as one workforce 
 
 ## Imagery
 
-- **Style:** (none yet)
-- **Subjects:** (none yet)
+- **Style:** Use photorealistic images (JPEG or PNG) for pages and content that depicts a real-world, human-centric situation, such as a cover page or case study. For abstract concepts use flat geometric images (SVG), which may or may not include a character.
+- **Subjects:** People at work, Finance, Medical, Utilities
 - **Treatment:** (none yet)
 - **Avoid:** (none yet)
 

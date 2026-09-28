@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hamoni — Applied UI kit</title>
+  <link rel="stylesheet" href="../../colors_and_type.css" />
+  <style>
+    html, body, #root { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--brand-color-bg-layout);
+      color: var(--brand-color-text);
+      font-family: var(--brand-font-family);
+      -webkit-font-smoothing: antialiased;
+    }
+    * { box-sizing: border-box; }
+    img { display: block; }
+    a:focus-visible, button:focus-visible, textarea:focus-visible {
+      outline: 2px solid var(--brand-color-primary);
+      outline-offset: 2px;
+    }
+    @media (max-width: 900px) {
+      /* stack the rails so the layout never scrolls horizontally */
+      #root > div { flex-wrap: wrap; }
+      #root > div > nav, #root > div > aside { width: 100% !important; border-right: 0; border-bottom: 1px solid var(--brand-color-border-secondary); }
+      #root > div > main { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin></script>
+
+  <script type="text/babel" src="components/MessageBubble.jsx"></script>
+  <script type="text/babel" src="components/InputBar.jsx"></script>
+  <script type="text/babel" src="components/ChatArea.jsx"></script>
+  <script type="text/babel" src="components/ListRail.jsx"></script>
+  <script type="text/babel" src="components/Sidebar.jsx"></script>
+  <script type="text/babel" src="components/App.jsx"></script>
+
+  <script type="text/babel">
+    const { App } = window;
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>

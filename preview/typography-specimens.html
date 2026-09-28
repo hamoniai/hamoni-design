@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hamoni — Typography specimens</title>
+  <link rel="stylesheet" href="../colors_and_type.css" />
+  <style>
+    body { margin: 0; padding: 24px; background: var(--brand-color-bg-container); color: var(--brand-color-text); font-family: var(--brand-font-family); }
+    h2 { font-size: 20px; margin: 0 0 2px; font-weight: var(--brand-font-weight-strong); }
+    p.sub { margin: 0 0 20px; color: var(--brand-color-text-secondary); font-size: 13px; }
+    .card { border: 1px solid var(--brand-color-border-secondary); border-radius: 8px; padding: 18px; background: var(--brand-color-bg-elevated); }
+    .spec { border-top: 1px solid var(--brand-color-border-secondary); padding: 10px 0; }
+    .spec:first-child { border-top: 0; padding-top: 0; }
+    .meta { font-family: var(--brand-font-family-code); font-size: 11px; color: var(--brand-color-text-tertiary); margin-top: 4px; }
+    .h1 { font-size: var(--brand-font-size-heading-1); line-height: var(--brand-line-height-heading); font-weight: var(--brand-font-weight-strong); margin: 0; }
+    .h2 { font-size: var(--brand-font-size-heading-2); line-height: var(--brand-line-height-heading); font-weight: var(--brand-font-weight-strong); margin: 0; }
+    .h3 { font-size: var(--brand-font-size-heading-3); line-height: var(--brand-line-height-heading); font-weight: var(--brand-font-weight-strong); margin: 0; }
+    .h4 { font-size: var(--brand-font-size-heading-4); line-height: var(--brand-line-height-heading); font-weight: var(--brand-font-weight-strong); margin: 0; }
+    .body { font-size: var(--brand-font-size); line-height: var(--brand-line-height); margin: 0; }
+    .sm { font-size: var(--brand-font-size-sm); line-height: var(--brand-line-height); color: var(--brand-color-text-secondary); margin: 0; }
+    .mono { font-family: var(--brand-font-family-code); font-size: var(--brand-font-size-sm); background: var(--brand-color-fill-tertiary); border: 1px solid var(--brand-color-border-secondary); border-radius: 6px; padding: 10px; margin: 0; color: var(--brand-color-text); }
+    code { font-family: var(--brand-font-family-code); }
+  </style>
+</head>
+<body>
+  <h2>Typography</h2>
+  <p class="sub">Inter for display and body · Roboto Mono for code</p>
+
+  <div class="card">
+    <div class="spec"><p class="h1">One workforce</p><div class="meta">Heading 1 · 38px · weight 600</div></div>
+    <div class="spec"><p class="h2">One workforce</p><div class="meta">Heading 2 · 32px · weight 600</div></div>
+    <div class="spec"><p class="h3">One workforce</p><div class="meta">Heading 3 · 26px · weight 600</div></div>
+    <div class="spec"><p class="h4">One workforce</p><div class="meta">Heading 4 · 22px · weight 600</div></div>
+    <div class="spec"><p class="body">Bring your people and AI together, orchestrated as one workforce and built to scale.</p><div class="meta">Body · 14px · weight 400</div></div>
+    <div class="spec"><p class="sm">Secondary and metadata text.</p><div class="meta">Small · 12px · weight 400</div></div>
+    <div class="spec"><pre class="mono">$ od brand finalize hamoni-design</pre><div class="meta">Code · Roboto Mono · 12px</div></div>
+  </div>
+</body>
+</html>

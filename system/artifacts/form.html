@@ -296,7 +296,37 @@ details.kit-acc[open] .kit-acc-icon{transform:rotate(45deg)}
         </div>
         <div style="position:relative;max-width:42ch;">
           <h1 style="color:#fff;font-size:clamp(28px,3.4vw,42px);letter-spacing:-0.02em;line-height:1.08;margin-bottom:var(--brand-size-md);">Start with Design System for Hamoni</h1>
-          <p class="clamp-3" style="color:rgba(255,255,255,0.82);font-size:var(--brand-font-size-lg);line-height:1.55;margin-bottom:var(--brand-size-lg);">One workforce: Bring your people and AI together, orchestrated as one workforce and built to scale</p>
+          <p class="clamp-3" style="color:rgba(255,255,255,0.82);font-size:var(--brand-font-size-lg);line-height:1.55;margin-bottom:var(--brand-size-lg);">## Product Context
+
+Hamoni is a cloud workflow platform with an Operations-first focus that allows teams to integrate AI directly into their business processes as an actively contributing participant. Given the focus, the primary user is likely to be non-technical. Therefore there are three key rules 1) 80% of things should be easy; 2) the remaining 20% fall into an 'advanced mode' that should be used by a technical user; 3) when in advanced mode, the user should have full control, with only verification to ensure any provided changes do not break the platform.
+
+## Components
+
+- **Primary action** — one solid button per view: fill `var(--brand-color-primary)`, text `var(--brand-color-text)`.
+- **Secondary** — outline (`1px var(--brand-color-border)`) or ghost/text; never a second solid fill.
+- **Surfaces** — cards on `var(--brand-color-bg-container)`; raised panels on `var(--brand-color-bg-elevated)`.
+- **Radius** — `3 / 5 / 8 / 10px` (xs / sm / default / lg).
+- **Control heights** — `16 / 24 / 32 / 40px` (xs / sm / default / lg); `44px` minimum touch target on mobile.
+- **Borders** — `1px` `var(--brand-color-border)` / `var(--brand-color-border-secondary)`.
+- **States** — hover / focus / active use the derived `--brand-color-*-hover | -active | -border` tokens; always show a focus ring.
+- **Inventory** — buttons, cards, forms/inputs, tabs, badges, avatars, accordion, progress, pagination, switches.
+
+## Motion
+
+- **Durations** — fast `0.1s` · mid `0.2s` · slow `0.3s`.
+- **Easing** — in-out `cubic-bezier(0.645, 0.045, 0.355, 1)`; out `cubic-bezier(0.215, 0.61, 0.355, 1)`.
+- **Usage** — transitions on hover/active (colour, border, small transforms); no large movement.
+- **Reduced motion** — honour `prefers-reduced-motion: reduce` by dropping non-essential transitions.
+
+## Anti-patterns
+
+- Don't hardcode colours — use `--brand-color-*` tokens.
+- Don't use colours outside the registered palette.
+- Don't put light text on the light-purple primary fill — use `var(--brand-color-text)`.
+- Don't recolour the logo or add a wordmark to it.
+- Don't use the avoid-list vocabulary: *staff*, *resources*, *replacement*.
+- Don't lean on heavy drop shadows — depth comes from borders and surfaces.
+- Don't expose raw configuration to the non-technical user — put it behind **advanced mode**.</p>
           <ul style="list-style:none;margin:0;padding:0;"><li style="display:flex;gap:var(--brand-size-sm);align-items:flex-start;padding:var(--brand-size-xs) 0;color:rgba(255,255,255,0.92);font-size:var(--brand-font-size-lg);line-height:1.45;">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true" style="flex:0 0 auto;margin-top:3px;"><path d="M3.5 9.5L7 13l7.5-8" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span>Set up in minutes</span>
@@ -310,7 +340,7 @@ details.kit-acc[open] .kit-acc-icon{transform:rotate(45deg)}
         </div>
         <div style="position:relative;display:flex;align-items:center;gap:var(--brand-size-sm);color:rgba(255,255,255,0.7);font-size:var(--brand-font-size-sm);">
           <span style="display:inline-flex;width:8px;height:8px;border-radius:50%;background:var(--brand-color-success);box-shadow:0 0 0 4px rgba(255,255,255,0.12);"></span>
-          <span>professional, outcomes-driven, and enterprise-focused, balancing high-tech capability with human-centric collaboration</span>
+          <span>professional, outcomes-driven, enterprise-focused, balancing high-tech capability with human-centric collaboration</span>
         </div>
       </div>
       <div style="display:flex;align-items:center;justify-content:center;padding:clamp(24px,4vw,64px);background:var(--brand-color-bg-layout);">

@@ -1,3 +1,12 @@
-# Hamoni Design System
+# Hamoni Design System — package files
 
-This is the design system for Hamoni. It is based from the Open Design [Supabase](https://github.com/nexu-io/open-design/tree/main/design-systems/supabase) design system.
+Full documentation lives at the project root:
+
+- [`../README.md`](../README.md) — package overview, preview manifest, reuse workflow
+- [`../DESIGN.md`](../DESIGN.md) — canonical design specification
+- [`../guide.md`](../guide.md) — short brand guide
+- [`../brand.json`](../brand.json) — brand record
+
+Generated in this folder:
+
+`seed.json` · `tokens.default.json` · `tokens.dark.json` · `tokens.compact.json` · `variables.css` · `variables.dark.css` · `brand-palette.css` · `theme.json` · `kit.html` · `kit.dark.html` · `index.html` · `artifacts/` · `BRAND-SYSTEM.md`

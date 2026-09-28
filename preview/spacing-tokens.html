@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hamoni — Spacing &amp; radius</title>
+  <link rel="stylesheet" href="../colors_and_type.css" />
+  <style>
+    body { margin: 0; padding: 24px; background: var(--brand-color-bg-container); color: var(--brand-color-text); font-family: var(--brand-font-family); }
+    h2 { font-size: 20px; margin: 0 0 2px; font-weight: var(--brand-font-weight-strong); }
+    p.sub { margin: 0 0 20px; color: var(--brand-color-text-secondary); font-size: 13px; }
+    .card { border: 1px solid var(--brand-color-border-secondary); border-radius: 8px; padding: 18px; background: var(--brand-color-bg-elevated); }
+    .bar { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+    .bar .box { height: 14px; background: var(--brand-color-primary); border-radius: 3px; flex: 0 0 auto; }
+    .bar .lbl { font-family: var(--brand-font-family-code); font-size: 11px; color: var(--brand-color-text-secondary); }
+    .radii { display: flex; gap: 12px; margin-top: 18px; }
+    .radii .r { width: 64px; height: 64px; background: var(--brand-color-bg-container); border: 1px solid var(--brand-color-primary); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 6px; font-family: var(--brand-font-family-code); font-size: 11px; color: var(--brand-color-text-secondary); }
+  </style>
+</head>
+<body>
+  <h2>Spacing &amp; radius</h2>
+  <p class="sub">8px baseline grid · radius scale 3 / 5 / 8 / 10px</p>
+
+  <div class="card">
+    <div class="bar"><span class="box" style="width:var(--brand-size-xxs)"></span><span class="lbl">4 · xxs</span></div>
+    <div class="bar"><span class="box" style="width:var(--brand-size-xs)"></span><span class="lbl">8 · xs</span></div>
+    <div class="bar"><span class="box" style="width:var(--brand-size-sm)"></span><span class="lbl">12 · sm</span></div>
+    <div class="bar"><span class="box" style="width:var(--brand-size)"></span><span class="lbl">16 · base</span></div>
+    <div class="bar"><span class="box" style="width:var(--brand-size-md)"></span><span class="lbl">20 · md</span></div>
+    <div class="bar"><span class="box" style="width:var(--brand-size-lg)"></span><span class="lbl">24 · lg</span></div>
+    <div class="bar"><span class="box" style="width:var(--brand-size-xl)"></span><span class="lbl">32 · xl</span></div>
+    <div class="bar"><span class="box" style="width:var(--brand-size-xxl)"></span><span class="lbl">48 · xxl</span></div>
+
+    <div class="radii">
+      <div class="r" style="border-radius:var(--brand-border-radius-xs)">3px</div>
+      <div class="r" style="border-radius:var(--brand-border-radius-sm)">5px</div>
+      <div class="r" style="border-radius:var(--brand-border-radius)">8px</div>
+      <div class="r" style="border-radius:var(--brand-border-radius-lg)">10px</div>
+    </div>
+  </div>
+</body>
+</html>
