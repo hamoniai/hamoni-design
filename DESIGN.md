@@ -18,6 +18,8 @@ colors:
 
 > Surface: web
 
+*One workforce*
+
 ## Product Context
 
 Hamoni is a cloud workflow platform with an Operations-first focus that allows teams to integrate AI directly into their business processes as an actively contributing participant. Given the focus, the primary user is likely to be non-technical. Therefore there are three key rules 1) 80% of things should be easy; 2) the remaining 20% fall into an 'advanced mode' that should be used by a technical user; 3) when in advanced mode, the user should have full control, with only verification to ensure any provided changes do not break the platform.
@@ -67,7 +69,7 @@ Hamoni is a cloud workflow platform with an Operations-first focus that allows t
 ## Typography
 - **Display:** Inter — weights 400, 700 — fallbacks: system-ui, -apple-system, Segoe UI, Helvetica Neue, Arial, sans-serif
 - **Body:** Inter — weights 400, 700 — fallbacks: system-ui, -apple-system, Segoe UI, Helvetica Neue, Arial, sans-serif
-- **Mono:** 'Roboto Mono' — weights 400, 700 — fallbacks: system-ui, ui-monospace, 'Courier New', monospace
+- **Mono:** 'JetBrains Mono' — weights 400, 700 — fallbacks: 'Roboto Mono', ui-monospace, 'Courier New', monospace
 
 ## Voice & Tone
 

@@ -64,7 +64,7 @@ Focused review cards in `preview/` (each links `colors_and_type.css`):
 
 - `preview/colors-primary.html` — primary purple ramp + semantic primary tokens
 - `preview/colors-themes.html` — light default vs dark `.dark`
-- `preview/typography-specimens.html` — Inter display/body + Roboto Mono
+- `preview/typography-specimens.html` — Inter display/body + JetBrains Mono
 - `preview/spacing-tokens.html` — spacing scale + radius
 - `preview/components-buttons.html` — button variants, sizes and states
 - `preview/brand-assets.html` — logo, concept icons and photorealistic examples
@@ -80,7 +80,7 @@ Longer surfaces:
 ## Design System Highlights
 
 - **Colour** — primary purple `#bb86fc`; canvas light `#FBF6FF` / dark `#121212`; surfaces `#1e1e1e`; text greys `#e0e0e0`, `#a0a0a0`, `#6c6c6c`; borders `#2e2e2e`.
-- **Typography** — Inter for display and body, weights 400 / 700.
+- **Typography** — Inter for display and body, weights 400 / 700; `'JetBrains Mono'` for code and numerals.
 - **Layout** — 8px radius, 1px borders, 8px baseline grid.
 - **Themes** — light is the default; dark is opt-in via the `.dark` class (or `system/variables.dark.css`).
 - **Logo** — abstract circular mark in purple `#7f39fb`, transparent background (280×288).
